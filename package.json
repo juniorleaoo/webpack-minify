@@ -1,0 +1,32 @@
+{
+  "name": "webpack-minify",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js --progress",
+    "build:babel": "webpack --config webpack-babel-transform-runtime.config.js --progress",
+    "build:esbuild": "webpack --config webpack-esbuild.config.js --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorleaoo/webpack-minify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juniorleaoo/webpack-minify/issues"
+  },
+  "homepage": "https://github.com/juniorleaoo/webpack-minify#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/plugin-transform-runtime": "^7.22.2",
+    "@babel/preset-env": "^7.22.2",
+    "babel-loader": "^9.1.2",
+    "esbuild-loader": "^3.0.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
